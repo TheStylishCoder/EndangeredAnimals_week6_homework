@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const newItemForm = document.querySelector('#new-item-form');
     newItemForm.addEventListener('submit', handleNewItemFormSubmit);
 
+    const deleteAllButton = document.querySelector('#delete-all');
+    deleteAllButton.addEventListener('click', handleDeleteAllClick);
+
 });
 
 const handleNewItemFormSubmit = function(event){
@@ -40,4 +43,9 @@ const createAnimalItem = function(form){
 
     return animalItem;
 
+};
+
+const handleDeleteAllClick = function(event){
+    const animalList = document.querySelector('#animal-list');
+    animalList.innerHTML = '';
 };
