@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endangered Animals List</title>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <form id="new-item-form">
+        <div id="form-wrapper">
+            <div class="form-item">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Name of Animal" required/> 
+            </div>
+            <div class="form-item">
+                <label for="species">Species:</label>
+                <input type="text" id="species" placeholder="Species of Animal" required/> 
+            </div>
+            <div class="form-item">
+                <label for="continent">Continent:</label>
+                <select name="continent" id="continent">
+                    <option value="" disabled selected hidden>Select a Continent</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Antarctica">Antarctica</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="North America">North America</option>
+                    <option value="Oceania">Oceania</option>
+                    <option value="South America">South America</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <p>Conservation Status:</p>
+                <input type="radio" id="least-concern" name="status" value="least-concern">
+                <label for="least-concern">Least Concern</label>
+                <input type="radio" id="near-threatened" name="status" value="near-threatened">
+                <label for="near-threatened">Near Threatened</label>
+                <input type="radio" id="vulnerable" name="status" value="vulnerable">
+                <label for="vulnerable">Vulnerable</label>
+                <input type="radio" id="endangered" name="status" value="endangered">
+                <label for="endangered">Endangered</label>
+                <input type="radio" id="critically-endangered" name="status" value="critically-endangered">
+                <label for="critically-endangered">Critically Endangered</label>
+            </div>
+            <div class="form-item">
+                <p>Choose Habitat:</p>
+                <label for="deserts">Deserts</label>
+                <input id="deserts" name="habitat" type="checkbox" value="deserts">
+                <br>
+                <label for="forest">Forest</label>
+                <input id="forest" name="habitat" type="checkbox" value="forest">
+                <br>
+                <label for="freshwater">Freshwater</label>
+                <input id="freshwater" name="habitat" type="checkbox" value="freshwater">
+                <br>
+                <label for="grasslands">Grasslands</label>
+                <input id="grasslands" name="habitat" type="checkbox" value="grasslands">
+                <br>
+                <label for="mountains">Mountains</label>
+                <input id="mountains" name="habitat" type="checkbox" value="mountains">
+                <br>
+                <label for="ocean">Ocean</label>
+                <input id="ocean" name="habitat" type="checkbox" value="ocean">
+                <br>
+                <label for="polar-regions">Polar Regions</label>
+                <input id="polar-regions" name="habitat" type="checkbox" value="polar-regions">
+                <br>
+                <label for="wetlands">Wetlands</label>
+                <input id="wetlands" name="habitat" type="checkbox" value="wetlands">
+            </div>
+
+        </div>
+        <input type="submit" value="save"/>
+    </form>
+
+    <h1>Endangered Animals List</h1>
+    <ul id="animal-list"></ul>
+    
+</body>
+</html>
