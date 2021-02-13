@@ -1,0 +1,39 @@
+body {
+    padding: 30px;
+}
+
+body > h1 {
+    text-align: center;
+}
+
+#form-wrapper {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    border: black solid 4px;
+}
+
+.form-item {
+    margin: 8px;
+}
+
+.save {
+    margin-left: 5px;
+}
+
+#delete-all {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#animal-list {
+    display:flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.animal-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 5px;
+    border: green solid 1px;
+}

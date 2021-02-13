@@ -37,9 +37,10 @@ const createAnimalItem = function(form){
     conservationStatus.textContent = form.status.value
     animalItem.appendChild(conservationStatus);
 
-    const habitat = document.createElement('p');
-    habitat.textContent = form.habitat.value;
-    animalItem.appendChild(habitat);
+    // const habitat = document.createElement('p');
+    // habitat.textContent = form.habitat.value;
+    // animalItem.appendChild(habitat);
+    
 
     return animalItem;
 

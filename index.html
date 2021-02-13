@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Endangered Animals List</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <script src="js/app.js"></script>
 </head>
 <body>
+    <h1>Endangered Animals</h1>
+    <p>Complete the form to add an animal to your list.</p>
+    
     <form id="new-item-form">
         <div id="form-wrapper">
             <div class="form-item">
@@ -44,40 +48,34 @@
                 <input type="radio" id="critically-endangered" name="status" value="critically-endangered">
                 <label for="critically-endangered">Critically Endangered</label>
             </div>
-            <div class="form-item">
-                <p>Choose Habitat:</p>
+            <!-- <div class="form-item">
+                <p>Habitat:</p>
                 <label for="deserts">Deserts</label>
                 <input id="deserts" name="habitat" type="checkbox" value="deserts">
-                <br>
                 <label for="forest">Forest</label>
                 <input id="forest" name="habitat" type="checkbox" value="forest">
-                <br>
                 <label for="freshwater">Freshwater</label>
                 <input id="freshwater" name="habitat" type="checkbox" value="freshwater">
-                <br>
                 <label for="grasslands">Grasslands</label>
                 <input id="grasslands" name="habitat" type="checkbox" value="grasslands">
-                <br>
                 <label for="mountains">Mountains</label>
                 <input id="mountains" name="habitat" type="checkbox" value="mountains">
-                <br>
                 <label for="ocean">Ocean</label>
                 <input id="ocean" name="habitat" type="checkbox" value="ocean">
-                <br>
                 <label for="polar-regions">Polar Regions</label>
                 <input id="polar-regions" name="habitat" type="checkbox" value="polar-regions">
-                <br>
                 <label for="wetlands">Wetlands</label>
                 <input id="wetlands" name="habitat" type="checkbox" value="wetlands">
-            </div>
-
+            </div> -->
+            <input class="save" type="submit" value="Save"/>
+            <button id="delete-all">Delete All</button>
         </div>
-        <input type="submit" value="save"/>
+        
     </form>
 
-    <button id="delete-all">Delete All</button>
+    
 
-    <h1>Endangered Animals List</h1>
+    <h2>Endangered Animals List</h2>
     <ul id="animal-list"></ul>
     
 </body>
